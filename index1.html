@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Culture</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #5a2b09;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            text-align: center;
+            max-width: 100%;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 500px;
+            height: 400px;
+            border-radius: 10px;
+            display: block;
+            margin: 0 auto;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        /* Second Page Styling */
+        .second-page {
+            display: none;
+            padding: 20px;
+            background-color: #fce4b8;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .second-page h2 {
+            color: #5a2b09;
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        .second-page p {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.1rem;
+            color: #333;
+            line-height: 1.6;
+        }
+        .section {
+            margin-top: 40px;
+        }
+      .section img {
+    display: block;
+    margin: 15px auto; /* Centers horizontally */
+    max-width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+       footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #5a2b09;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- First Page -->
+    <div class="container" id="firstPage">
+        <h1>India</h1>
+        <img src="india.png" alt="India Culture Collage" onclick="showSecondPage()">
+    </div>
+
+    <!-- Second Page -->
+    <div class="second-page" id="secondPage">
+        <h2>Welcome to Indian Culture</h2>
+        <p>
+            India is a land of diverse traditions, languages, cuisines, and art forms. 
+            It is known for its breathtaking landmarks, colorful festivals, and mouthwatering dishes. 
+            Let’s explore some of them.
+        </p>
+
+        <!-- Famous Places -->
+        <div class="section">
+            <h2>🏛 Famous Places</h2>
+            <img src="tajmahal.jpg" alt="Taj Mahal">
+            <p>
+                The Taj Mahal in Agra, a UNESCO World Heritage Site, is one of the Seven Wonders of the World.
+                Other famous sites include Jaipur’s Amber Fort, Kerala’s backwaters, and Varanasi’s ghats.
+            </p>
+        </div>
+
+        <!-- Festivals -->
+        <div class="section">
+            <h2>🎉 Festivals</h2>
+            <img src="holi.jpg" alt="Holi Festival">
+            <p>
+                India celebrates countless festivals throughout the year. 
+                Holi, the festival of colors, and Diwali, the festival of lights, are among the most famous. 
+                Each state has its own unique celebrations rooted in tradition and culture.
+            </p>
+        </div>
+
+        <!-- Food -->
+        <div class="section">
+            <h2>🍲 Famous Food</h2>
+            <img src="thali.jpg" alt="Indian Thali">
+            <p>
+                Indian cuisine is known for its spices and variety. 
+                From North Indian dishes like butter chicken and naan to South Indian delicacies like dosa and sambar, 
+                the flavors are rich and diverse. Street food like samosas, chaat, and pani puri are also must-tries.
+            </p>
+        </div>
+        <footer>
+        © All Rights Reserved by India
+    </footer>
+
+    </div>
+
+    
+    <script>
+        function showSecondPage() {
+            document.getElementById("firstPage").style.display = "none";
+            document.getElementById("secondPage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
